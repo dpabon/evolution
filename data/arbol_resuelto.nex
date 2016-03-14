@@ -1,0 +1,37 @@
+#NEXUS
+[R-package APE, Wed Mar  9 18:17:12 2016]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 12;
+	TAXLABELS
+		Schizanthus_alpestris
+		Schizanthus_candidus
+		Schizanthus_grahamii
+		Schizanthus_hookeri
+		Schizanthus_integrifolius
+		Schizanthus_lacteus
+		Schizanthus_laetus
+		Schizanthus_litoralis
+		Schizanthus_parvulus
+		Schizanthus_pinnatus
+		Schizanthus_porrigens
+		Schizanthus_tricolor
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Schizanthus_alpestris,
+		2	Schizanthus_candidus,
+		3	Schizanthus_grahamii,
+		4	Schizanthus_hookeri,
+		5	Schizanthus_integrifolius,
+		6	Schizanthus_lacteus,
+		7	Schizanthus_laetus,
+		8	Schizanthus_litoralis,
+		9	Schizanthus_parvulus,
+		10	Schizanthus_pinnatus,
+		11	Schizanthus_porrigens,
+		12	Schizanthus_tricolor
+	;
+	TREE * UNTITLED = [&R] ((1:0.00417,((2:0.001853,6:0.002378):0,5:0.001089):0.002358):0.014497,((3:0.002605,4:0.004112):0.01188,(7:0.010086,((8:0.001835,11:0.004756):0.005088,((9:0.002619,12:0.002448):0.001234,10:0.001036):0.007847):0.000886):0.002791):0);
+END;
