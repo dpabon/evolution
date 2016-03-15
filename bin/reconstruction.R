@@ -1,8 +1,8 @@
 ## Graficas finales
 library(phytools)
 
-arbol <- read.nexus("~/MEGAsync/evolution_project/data/arbol_resuelto.nex")
-datos <- read.csv("~/MEGAsync/evolution_project/data/character.csv", sep = ",")
+arbol <- read.nexus("~/MEGAsync/evolution/data/arbol_resuelto.nex")
+datos <- read.csv("~/MEGAsync/evolution/data/character.csv", sep = ",")
 plot.phylo(arbol, use.edge.length = F)
 ## Convirtiendo 0 en 0.00001
 for( i in 1:length(arbol$edge.length)){
@@ -15,6 +15,7 @@ edgelabels()
 
 ###Caracter corolla_size
 x0 <- as.numeric(as.vector(datos$corola_size))
+x0
 ## reconstrucción
 reco0 <- ace(x0, arbol, type = "continuous", method = "ML", model = "BM")
 names(x0) <- arbol$tip.label
@@ -23,7 +24,7 @@ nodelabels(format(round(reco0$ace, 2), nsmall = 2), frame = "n", adj = 0)
 plot.phylo(arbol, use.edge.length = F)
 nodelabels(format(round(reco0$ace, 2), nsmall = 2), frame = "n", adj = 0)
 contMap(arbol, x0, lwd = 3.5)
-nodelabels(format(round(reco1$ace, 2), nsmall = 2), frame = "n", adj = c(0,0.7))
+nodelabels(format(round(reco0$ace, 2), nsmall = 2), frame = "n", adj = c(0,0.7))
 dev.off()
 phenogram(arbol, x0, spread.labels=TRUE)
 
@@ -105,7 +106,7 @@ nodelabels(node =13:23, pie = reco5$lik.anc,
 tiplabels(pie = to.matrix(x5, sort(unique(x5))), piecol = c("yellow", "blue", "red"), 
           cex = 0.3)
 par("usr")
-legend(x =0.024, y = 1.8 , legend = c("Aveja", "Colibri", "Polilla"),pch = 22, lwd = 5,   col = c("yellow", "blue", "red"), bty = "n", yjust = 0.7, y.intersp = 0.7, x.intersp = 0.7)
+legend(x =0.024, y = 1.8 , legend = c("Abeja", "Colibri", "Polilla"),pch = 22, lwd = 5,   col = c("yellow", "blue", "red"), bty = "n", yjust = 0.7, y.intersp = 0.7, x.intersp = 0.7)
 
 ?legend()
 ## Caracter Petal Reflection
@@ -138,3 +139,32 @@ tiplabels(pie = to.matrix(x7, sort(unique(x7))), piecol = c("black", "white"),
           cex = 0.3)
 legend("bottomleft", legend = c("Presente", "Ausente"),pch = 22, lwd = 5,   col = c("white", "black"), bty = "o", yjust = 0.7, y.intersp = 0.7, x.intersp = 0.7, bg = "gray")
 par("usr")
+
+
+## Correlaciones
+# bee vs petall reflection
+bee <- as.factor(as.vector(datos$Hummingbird))
+names(bee) <- arbol$tip.label
+fitPagel(arbol, bee, x6, method="ace")
+
+# bee vs Explosive pollen discharge
+bee <- as.factor(as.vector(datos$Hummingbird))
+names(bee) <- arbol$tip.label
+fitPagel(arbol, bee, x7, method="ace")
+
+# bee vs Red
+red <- as.factor(as.vector(datos$Red))
+names(red) <- arbol$tip.label
+red
+fitPagel(arbol, red, bee, method="ace")
+?fitPagel
+
+# bee vs pink
+pink <- as.factor(as.vector(datos$Pink))
+names(pink) <- arbol$tip.label
+fitPagel(arbol,bee, pink, method = "ace")
+
+# bee vs white
+white <- as.factor(as.vector(datos$White))
+names(white) <- arbol$tip.label
+fitPagel(arbol, bee, white, method ="ace")
