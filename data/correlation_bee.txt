@@ -1,0 +1,142 @@
+Correlation test
+
+BEE VS PETAL REFLECTION
+Pagel's binary character correlation test:
+
+Indepedent model rate matrix:
+         0|NR        0|R      1|NR        1|R
+0|NR -159.98973   18.82297 141.16676    0.00000
+0|R   119.67710 -260.84386   0.00000  141.16676
+1|NR   49.57681    0.00000 -68.39977   18.82297
+1|R     0.00000   49.57681 119.67710 -169.25391
+
+Dependent model rate matrix:
+            0|NR          0|R      1|NR     1|R
+0|NR -551118.26414    143.62601 550974.64       0
+0|R       92.99002    -92.99002      0.00       0
+1|NR   74498.75379      0.00000 -74498.75       0
+1|R        0.00000 206558.20490 383979.77 -590538
+
+Model fit:
+          log-likelihood
+independent      -9.007397
+dependent        -5.937248
+
+Hypothesis test result:
+likelihood-ratio:  6.140297
+p-value:  0.188913
+
+Model fitting method used was ace
+
+BEE VS EXPLOSIVE POLLEN DISCHARGE
+Pagel's binary character correlation test:
+
+Indepedent model rate matrix:
+           0|A        0|P        1|A       1|P
+0|A -282.33336  141.16668  141.16667   0.00000
+0|P   49.57674 -190.74341    0.00000 141.16667
+1|A   49.57672    0.00000 -190.74340 141.16668
+1|P    0.00000   49.57672   49.57674 -99.15346
+
+Dependent model rate matrix:
+            0|A           0|P          1|A         1|P
+0|A   -197.8659  0.000000e+00     197.8659      0.0000
+0|P 187626.5312 -5.726187e+05       0.0000 384992.1294
+1|A 185104.0063  0.000000e+00 -584935.8411 399831.8348
+1|P      0.0000  4.753976e-02     153.8964   -153.9439
+
+Model fit:
+            log-likelihood
+independent     -10.808848
+dependent        -4.692304
+
+Hypothesis test result:
+  likelihood-ratio:  12.23309
+  p-value:  0.01569957
+
+Model fitting method used was ace
+
+BEE vs RED
+Pagel's binary character correlation test:
+
+Indepedent model rate matrix:
+         0|0       0|1        1|0        1|1
+0|0 -181.35674 141.16668   40.19006    0.00000
+0|1   49.57673 -89.76679    0.00000   40.19006
+1|0  403.31278   0.00000 -544.47946  141.16668
+1|1    0.00000 403.31278   49.57673 -452.88951
+
+Dependent model rate matrix:
+           0|0         0|1        1|0       1|1
+0|0 -34026.29072   191.48513   33834.81      0.00
+0|1     49.02876   -49.02876       0.00      0.00
+1|0 101810.49467     0.00000 -101810.49      0.00
+1|1      0.00000 41980.97585   31338.06 -73319.04
+
+Model fit:
+          log-likelihood
+independent      -8.117603
+dependent        -6.979794
+
+Hypothesis test result:
+likelihood-ratio:  2.275618
+p-value:  0.6852116
+
+Model fitting method used was ace
+
+BEE vs PINK
+
+Pagel's binary character correlation test:
+
+Indepedent model rate matrix:
+         0|0        0|1        1|0       1|1
+0|0 -282.33336  141.16668  141.16667   0.00000
+0|1   49.57674 -190.74341    0.00000 141.16667
+1|0   49.57672    0.00000 -190.74340 141.16668
+1|1    0.00000   49.57672   49.57674 -99.15346
+
+Dependent model rate matrix:
+          0|0           0|1          1|0         1|1
+0|0   -197.8659  0.000000e+00     197.8659      0.0000
+0|1 187626.5312 -5.726187e+05       0.0000 384992.1294
+1|0 185104.0063  0.000000e+00 -584935.8411 399831.8348
+1|1      0.0000  4.753976e-02     153.8964   -153.9439
+
+Model fit:
+          log-likelihood
+independent     -10.808848
+dependent        -4.692304
+
+Hypothesis test result:
+likelihood-ratio:  12.23309
+p-value:  0.01569957
+
+Model fitting method used was ace
+
+BEE vs WHITE
+Pagel's binary character correlation test:
+
+Indepedent model rate matrix:
+         0|0        0|1       1|0        1|1
+0|0 -159.98973   18.82297 141.16676    0.00000
+0|1  119.67710 -260.84386   0.00000  141.16676
+1|0   49.57681    0.00000 -68.39977   18.82297
+1|1    0.00000   49.57681 119.67710 -169.25391
+
+Dependent model rate matrix:
+            0|0          0|1       1|0     1|1
+0|0 -551118.26414    143.62601 550974.64       0
+0|1      92.99002    -92.99002      0.00       0
+1|0   74498.75379      0.00000 -74498.75       0
+1|1       0.00000 206558.20490 383979.77 -590538
+
+Model fit:
+          log-likelihood
+independent      -9.007397
+dependent        -5.937248
+
+Hypothesis test result:
+likelihood-ratio:  6.140297
+p-value:  0.188913
+
+Model fitting method used was ace 

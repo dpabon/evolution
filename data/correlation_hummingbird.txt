@@ -1,0 +1,135 @@
+HUMMINGBIRD vs PETAL REFLECTION
+
+Pagel's binary character correlation test:
+
+Indepedent model rate matrix:
+        0|NR        0|R       1|NR        1|R
+0|NR -59.01305   18.82297   40.19008    0.00000
+0|R  119.67712 -159.86720    0.00000   40.19008
+1|NR 403.31304    0.00000 -422.13601   18.82297
+1|R    0.00000  403.31304  119.67712 -522.99016
+
+Dependent model rate matrix:
+        0|NR         0|R         1|NR        1|R
+0|NR -83.66373   21.565133   62.0985994  0.0000000
+0|R  102.11222 -102.112223    0.0000000  0.0000000
+1|NR 478.27745    0.000000 -478.2774549  0.0000000
+1|R    0.00000    0.109753    0.1002838 -0.2100368
+
+Model fit:
+          log-likelihood
+independent      -6.316152
+dependent        -6.223088
+
+Hypothesis test result:
+likelihood-ratio:  0.1861273
+p-value:  0.9959291
+
+HUMMINGBIRD VS EXPLOSIVE POLLEN DISCHARGE
+Pagel's binary character correlation test:
+
+Indepedent model rate matrix:
+         0|A       0|P        1|A        1|P
+0|A -181.35674 141.16668   40.19006    0.00000
+0|P   49.57673 -89.76679    0.00000   40.19006
+1|A  403.31278   0.00000 -544.47946  141.16668
+1|P    0.00000 403.31278   49.57673 -452.88951
+
+Dependent model rate matrix:
+           0|A         0|P        1|A       1|P
+0|A -34026.29072   191.48513   33834.81      0.00
+0|P     49.02876   -49.02876       0.00      0.00
+1|A 101810.49467     0.00000 -101810.49      0.00
+1|P      0.00000 41980.97585   31338.06 -73319.04
+
+Model fit:
+          log-likelihood
+independent      -8.117603
+dependent        -6.979794
+
+Hypothesis test result:
+likelihood-ratio:  2.275618
+p-value:  0.6852116
+
+HUMMINGBIRD VS RED
+
+Pagel's binary character correlation test:
+
+Indepedent model rate matrix:
+        0|0        0|1        1|0        1|1
+0|0 -80.38133   40.06957   40.31175    0.00000
+0|1 401.88319 -442.19495    0.00000   40.31175
+1|0 404.75687    0.00000 -444.82645   40.06957
+1|1   0.00000  404.75687  401.88319 -806.64006
+
+Dependent model rate matrix:
+           0|0           0|1           1|0        1|1
+0|0    -56.06912  0.000000e+00      56.06912      0.000
+0|1 119822.41368 -3.202021e+05       0.00000 200379.723
+1|0 110430.15582  0.000000e+00 -370726.55636 260296.401
+1|1      0.00000  8.768112e-01    1330.00215  -1330.879
+
+Model fit:
+          log-likelihood
+independent      -5.426360
+dependent        -2.025763
+
+Hypothesis test result:
+likelihood-ratio:  6.801194
+p-value:  0.1467747
+
+Model fitting method used was ace
+
+HUMMINGBIRD VS PINK
+Pagel's binary character correlation test:
+
+Indepedent model rate matrix:
+         0|0       0|1        1|0        1|1
+0|0 -181.35674 141.16668   40.19006    0.00000
+0|1   49.57673 -89.76679    0.00000   40.19006
+1|0  403.31278   0.00000 -544.47946  141.16668
+1|1    0.00000 403.31278   49.57673 -452.88951
+
+Dependent model rate matrix:
+           0|0         0|1        1|0       1|1
+0|0 -34026.29072   191.48513   33834.81      0.00
+0|1     49.02876   -49.02876       0.00      0.00
+1|0 101810.49467     0.00000 -101810.49      0.00
+1|1      0.00000 41980.97585   31338.06 -73319.04
+
+Model fit:
+          log-likelihood
+independent      -8.117603
+dependent        -6.979794
+
+Hypothesis test result:
+likelihood-ratio:  2.275618
+p-value:  0.6852116
+
+HUMMINGBIRD VS WHITE
+Pagel's binary character correlation test:
+
+Indepedent model rate matrix:
+        0|0        0|1        1|0        1|1
+0|0 -59.01305   18.82297   40.19008    0.00000
+0|1 119.67712 -159.86720    0.00000   40.19008
+1|0 403.31304    0.00000 -422.13601   18.82297
+1|1   0.00000  403.31304  119.67712 -522.99016
+
+Dependent model rate matrix:
+        0|0         0|1          1|0        1|1
+0|0 -83.66373   21.565133   62.0985994  0.0000000
+0|1 102.11222 -102.112223    0.0000000  0.0000000
+1|0 478.27745    0.000000 -478.2774549  0.0000000
+1|1   0.00000    0.109753    0.1002838 -0.2100368
+
+Model fit:
+          log-likelihood
+independent      -6.316152
+dependent        -6.223088
+
+Hypothesis test result:
+likelihood-ratio:  0.1861273
+p-value:  0.9959291
+
+Model fitting method used was ace 
