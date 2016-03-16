@@ -10,9 +10,12 @@ for( i in 1:length(arbol$edge.length)){
     arbol$edge.length[i] <- 0.00001
   }
 }
+write.nexus(arbol, file = "~/MEGAsync/evolution/data/ff.nex")
 edgelabels(arbol$edge.length)
 edgelabels()
-
+x11()
+plot.phylo(arbol, use.edge.length = F, label.offset = 0.55 )
+edgelabels(round(arbol$edge.length, 5),frame = "n", adj = c(0.3,1), cex=0.8)
 ###Caracter corolla_size
 x0 <- as.numeric(as.vector(datos$corola_size))
 x0
@@ -23,6 +26,7 @@ plot.phylo(arbol)
 nodelabels(format(round(reco0$ace, 2), nsmall = 2), frame = "n", adj = 0)
 plot.phylo(arbol, use.edge.length = F)
 nodelabels(format(round(reco0$ace, 2), nsmall = 2), frame = "n", adj = 0)
+?contMap
 contMap(arbol, x0, lwd = 3.5)
 nodelabels(format(round(reco0$ace, 2), nsmall = 2), frame = "n", adj = c(0,0.7))
 dev.off()
@@ -122,8 +126,8 @@ nodelabels(node =13:23, pie = reco6$lik.anc,
            piecol = c("black", "gray"), cex = 0.6)
 tiplabels(pie = to.matrix(x6, sort(unique(x6))), piecol = c("black", "gray"), 
           cex = 0.3)
-legend("bottomleft", legend = c("Sin Reflección", "Reflección"),pch = 22, lwd = 5,   col = c("black", "gray"), bty = "n", yjust = 0.7, y.intersp = 0.7, x.intersp = 0.7)
-
+legend("bottomleft", legend = c("Sin Reflexión", "Reflexión"),pch = 22, lwd = 5,   col = c("black", "gray"), bty = "n", yjust = 0.7, y.intersp = 0.7, x.intersp = 0.7)
+par("usr")
 ## Caracter Explosive pollen discharge 
 
 x7 <- as.factor(as.vector(datos$pollen_discharge))
@@ -146,7 +150,6 @@ par("usr")
 bee <- as.factor(as.vector(datos$Hummingbird))
 names(bee) <- arbol$tip.label
 fitPagel(arbol, bee, x6, method="ace")
-
 # bee vs Explosive pollen discharge
 bee <- as.factor(as.vector(datos$Hummingbird))
 names(bee) <- arbol$tip.label
@@ -168,3 +171,4 @@ fitPagel(arbol,bee, pink, method = "ace")
 white <- as.factor(as.vector(datos$White))
 names(white) <- arbol$tip.label
 fitPagel(arbol, bee, white, method ="ace")
+?fitPagel
