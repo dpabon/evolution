@@ -1,8 +1,16 @@
+#* ----------------------------------------------------------------------------
+#* "THE BEER-WARE LICENSE" (Revision 42):
+#* <dpabon@openmailbox.org> wrote this file.  As long as you retain this notice you
+#* can do whatever you want with this stuff. If we meet some day, and you think
+#* this stuff is worth it, you can buy me a beer in return.
+#*                                                              Daniel Pabón
+#* ----------------------------------------------------------------------------
+
 ## Graficas finales
 library(phytools)
 
-arbol <- read.nexus("~/MEGAsync/evolution/data/arbol_resuelto.nex")
-datos <- read.csv("~/MEGAsync/evolution/data/character.csv", sep = ",")
+arbol <- read.nexus("~/data/arbol_resuelto.nex")
+datos <- read.csv("~/data/character.csv", sep = ",")
 plot.phylo(arbol, use.edge.length = F)
 ## Convirtiendo 0 en 0.00001
 for( i in 1:length(arbol$edge.length)){
